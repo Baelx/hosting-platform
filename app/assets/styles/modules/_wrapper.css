@@ -1,5 +1,6 @@
 .wrapper {
-  padding: 0 1.2em;
+padding-left: 18px;
+padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
@@ -8,6 +9,23 @@
   &--medium {
   max-width:976px;
 }
+  &--no-b-padding-until-medium {
+padding-left: 0;
+padding-right: 0;
+
+@mixin atMedium {
+  padding: 0 1.2em;
+}
+}
+&--no-b-padding-until-large {
+padding-left: 0;
+padding-right: 0;
+
+@mixin atLarge {
+padding: 0 1.2em;
+}
+}
+
   .wrapper {
     padding: 0;
 }
