@@ -3,6 +3,12 @@
   z-index: 1;
   width: 100%;
   padding: 10px 0;
+  transition: background-color .3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba($mainBlue, 0.6);
+
+  }
 
   @mixin atMedium {
     background-color: rgba($mainBlue, 0.3);
@@ -28,7 +34,14 @@
   }
 
   &__btn-container {
-    float:right;
+    margin-bottom: 10px;
+
+    @mixin atMedium {
+      float:right;
+      margin-bottom: 10px;
+
+
+    }
   }
 
   &__menu-icon {
@@ -38,6 +51,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
+z-index: 10;
 
     @mixin atMedium {
       display: none;
@@ -45,10 +59,27 @@
   }
 
   &__menu-content {
-    display: none;
+    opacity: 0;
+transform: scale(1.2);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: relative;
+    padding-top: 90px;
+    text-align: center;
+
 
     @mixin atMedium {
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+transform: scale(1);
+    }
+
+    &--is-visible {
       display: block;
+      opacity: 1;
+      z-index: 1;
+transform: scale(1);
     }
   }
 }
