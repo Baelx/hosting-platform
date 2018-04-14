@@ -31,6 +31,24 @@
     }
   }
 
+  &--less-b-margin {
+    margin-bottom: 0rem;
 
+    @mixin atMedium {
+      margin-bottom: 5.3rem;
+
+    }
+  }
+
+  &--compact {
+    font-size: 2rem;
+    font-weight: 400;
+
+    @mixin atMedium {
+      font-size: 2.55rem;
+
+    }
+
+  }
 
 }
