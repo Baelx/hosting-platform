@@ -6,10 +6,20 @@
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
 
-@mixin atSmall {
-
+  &--is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
+
+  @mixin atSmall {
+
+  }
 
 
   &__body {
@@ -37,8 +47,18 @@
   }
 
   &__close {
-position: absolute;
-top: 15px;
-}
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color:$mainBlue;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainOrange;
+    }
+  }
 
 }
