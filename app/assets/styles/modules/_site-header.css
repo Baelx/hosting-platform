@@ -10,9 +10,16 @@
 
   }
 
+
+
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, 0.3);
 
+    &--dark {
+      background-color: rgba($darkBlue, 0.9);
+
+    }
   }
 
   &__logo {
@@ -23,10 +30,16 @@
     left: 50%;
     transform: translateX(-50%) scale(0.8);
     transform-origin: 50% 0;
+    transition: all .1s ease-out;
 
     @mixin atMedium {
       left: auto;
-      transform: translateX(0);;
+      transform: translateX(0);
+
+    .site-header--dark & {
+      transform: scale(.7);
+      background-color: transparent;
+}
     }
   }
   &__logo__graphic {
