@@ -19,11 +19,11 @@ class Modal {
     $(document).keyup(this.keyPressHandler.bind(this));
   }
 
-keyPressHandler(){
-if (e.keyCode == 27){
-this.closeModal();
-}
-}
+  keyPressHandler(e) {
+    if (e.keyCode == 27) {
+      this.closeModal();
+    }
+  }
 
   openModal() {
     this.modal.addClass("modal--is-visible");
