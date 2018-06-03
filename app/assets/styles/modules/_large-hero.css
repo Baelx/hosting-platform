@@ -16,8 +16,8 @@
     left: 0;
 
     @mixin atMedium {
-      padding-top: 60px;
-
+      padding-top: 0;
+      top: 40%;
     }
   }
 
@@ -35,5 +35,8 @@
 @mixin atSmall {
   font-size: 1.875rem;
 
+}
+@mixin atMedium {
+ margin-top: 0;
 }
 }

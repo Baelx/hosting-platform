@@ -6,7 +6,7 @@
 
     @mixin atMedium {
       float:right;
-
+      padding-top: 5px;
       }  }
 
       ul {
