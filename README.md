@@ -1,1 +1,1 @@
-# Soft Vibes Duo Wordpress theme in the making
+## Site for web hosting platform
