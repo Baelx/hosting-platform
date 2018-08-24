@@ -11,6 +11,10 @@
     font-weight: 500;
   }
 
+  &--red {
+    color: $mainRed;
+  }
+
   &--blue {
     color: $mainBlue;
   }

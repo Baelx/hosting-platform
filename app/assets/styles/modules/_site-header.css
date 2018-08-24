@@ -4,9 +4,9 @@
   width: 100%;
   padding: 10px 0;
   transition: background-color .3s ease-out;
-  
+
   &--is-expanded {
-    background-color: rgba($mainBlue, 0.6);
+    background-color: rgba($mainRed, 0.6);
 
   }
 
@@ -14,17 +14,17 @@
 
   @mixin atMedium {
     position: fixed;
-    background-color: rgba($mainBlue, 0.3);
+    background-color: rgba($mainRed, 0.3);
 
     &--dark {
-      background-color: rgba($darkBlue, 0.9);
+      background-color: rgba($darkRed, 0.9);
 
     }
   }
 
   &__logo {
     position: absolute;
-    background-color: $mainBlue;
+    background-color: $mainRed;
     padding: 25px 36px;
     top: 0px;
     left: 50%;
@@ -36,12 +36,18 @@
       left: auto;
       transform: translateX(0);
 
-    .site-header--dark & {
-      transform: scale(.7);
-      background-color: transparent;
-}
+      .site-header--dark & {
+        transform: scale(.7);
+        background-color: transparent;
+      }
     }
   }
+  &__logo__text {
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+}
+
   &__logo__graphic {
     text-indent: -999px;
   }
@@ -128,6 +134,12 @@
     padding-top: 90px;
     text-align: center;
 
+    div:nth-child(2) {
+
+      @mixin atMedium {
+        border-right: 1px solid rgba(47,85,114, 0.3);
+      }
+    }
 
     @mixin atMedium {
       opacity: 1;

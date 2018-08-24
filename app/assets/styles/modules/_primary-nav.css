@@ -40,7 +40,7 @@
       a {
         color: white;
         font-size: .8rem;
-        background-color: rgba($mainBlue, 0.7);
+        background-color: rgba($mainRed, 0.7);
         font-weight: 300;
         text-decoration: none;
         display: block;

@@ -360,13 +360,14 @@ color: #d59541;
 }
 
 .large-hero {
-  border-bottom: 0.6em solid #2f5572;
+  border-bottom: 0.6em solid #722f42;
   position: relative;
 }
 
 .large-hero__image {
     display:block;
-}
+    height: 600px;
+  }
 
 .large-hero__text-content {
     padding-top: 88px;
@@ -388,47 +389,15 @@ color: #d59541;
 
 .large-hero__title {
     font-weight: 300;
-    color: #2f5572;
-    font-size: 2.4rem;
+    color: #722f42;
+    font-size: 1.5rem;
     margin: 0;
   }
 
 @media (min-width: 530px){
 
 .large-hero__title {
-      font-size: 4.8rem
-  }
-  }
-
-.large-hero__subtitle {
-    font-weight: 300;
-    color: #2f5572;
-    font-size: 1.5rem;
-    margin: 0;
-
-  }
-
-@media (min-width: 530px){
-
-.large-hero__subtitle {
-      font-size: 2rem
-
-  }
-  }
-
-@media (min-width: 800px){
-
-.large-hero__subtitle {
-  font-size: 3.2rem
-
-  }
-  }
-
-@media (min-width: 1010px){
-
-.large-hero__subtitle {
-  font-size: 2.9rem
-
+      font-size: 3.0rem
   }
   }
 
@@ -438,8 +407,7 @@ color: #d59541;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgb(0, 0 ,0, 0.1);
     max-width:30rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 40px auto;
   }
 
 @media (min-width: 530px){
@@ -450,7 +418,7 @@ color: #d59541;
   }
 
 .btn {
-  background-color: #2f5572;
+  background-color: #722f42;
   color: #fff;
   text-decoration: none;
   padding: 0.75rem 1.2rem;
@@ -459,22 +427,22 @@ color: #d59541;
 
 .btn--orange {
     background-color: #d59541;
-}
+  }
 
 .btn--large {
     padding: 1.1rem 1.9rem;
-}
+  }
 
 @media (min-width: 530px){
 
 .btn {
-  font-size: 1.25rem
+    font-size: 1.25rem
 }
   }
 
 .wrapper {
-padding-left: 18px;
-padding-right: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
@@ -484,48 +452,48 @@ padding-right: 18px;
 .wrapper--narrow {
     max-width: 500px;
 
-}
+  }
 
 .wrapper--medium {
-  max-width:976px;
-}
+    max-width:976px;
+  }
 
 .wrapper--no-b-padding-until-medium {
-padding-left: 0;
-padding-right: 0;
-}
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 @media (min-width: 800px){
 
 .wrapper--no-b-padding-until-medium {
-  padding: 0 1.2em
-}
+      padding: 0 1.2em
+  }
   }
 
 .wrapper--no-b-padding-until-large {
-padding-left: 0;
-padding-right: 0;
-}
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 @media (min-width: 1010px){
 
 .wrapper--no-b-padding-until-large {
-padding: 0 1.2em
-}
+      padding: 0 1.2em
+  }
   }
 
 .wrapper .wrapper {
     padding: 0;
-}
+  }
 
 .wrapper--b-margin {
-  margin-bottom: 1rem;
-}
+    margin-bottom: 1rem;
+  }
 
 @media (min-width: 530px){
-  .wrapper--b-margin {
-    margin-bottom: 3.875rem;
-  }
+    .wrapper--b-margin {
+      margin-bottom: 3.875rem;
+    }
   }
 
 .page-section {
@@ -541,8 +509,8 @@ padding: 0 1.2em
 }
   }
 
-.page-section--blue {
-    background-color: #2f5572;
+.page-section--red {
+    background-color: #722f42;
     color: white;
   }
 
@@ -572,7 +540,7 @@ padding: 0 1.2em
 .headline {
   font-weight: 300;
   font-size: 1.9rem;
-  color: #2f5572;
+  color: #722f42;
 }
 
 @media (min-width: 530px){
@@ -780,6 +748,10 @@ padding: 0 1.2em
     font-weight: 500;
   }
 
+.section-title--red {
+    color: #722f42;
+  }
+
 .section-title--blue {
     color: #2f5572;
   }
@@ -899,7 +871,7 @@ border: 6px solid rgb(255, 255, 255, 0.8);
 }
 
 .testimonial__title {
-color: #2f5572;
+color: #722f42;
 text-align: center;
 font-size: 1.5rem;
 font-weight: 500;
@@ -1001,25 +973,25 @@ margin-bottom: 0;
 }
 
 .site-footer {
-background-color: #2f5572;
-color: white;
-padding: .5rem 0;
-text-align: center;
+  background-color: #722f42;
+  color: white;
+  padding: .5rem 0;
+  text-align: center;
 }
 
 .site-footer__text {
-display: block;
-margin-bottom: 1rem;
-font-weight: 300;
-}
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
 
 @media (min-width: 800px){
 
 .site-footer__text {
-display: inline;
-margin-bottom: 0;
-margin-right: 1.4rem
-}
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem
+  }
   }
 
 .site-header {
@@ -1031,7 +1003,7 @@ margin-right: 1.4rem
 }
 
 .site-header--is-expanded {
-    background-color: rgba(47,85,114, 0.6);
+    background-color: rgba(114,47,66, 0.6);
 
   }
 
@@ -1039,18 +1011,18 @@ margin-right: 1.4rem
 
 .site-header {
     position: fixed;
-    background-color: rgba(47,85,114, 0.3)
+    background-color: rgba(114,47,66, 0.3)
 }
 
     .site-header--dark {
-      background-color: rgba(23,51,72, 0.9);
+      background-color: rgba(59,15,9, 0.9);
 
     }
   }
 
 .site-header__logo {
     position: absolute;
-    background-color: #2f5572;
+    background-color: #722f42;
     padding: 25px 36px;
     top: 0px;
     left: 50%;
@@ -1069,12 +1041,18 @@ margin-right: 1.4rem
               transform: translateX(0)
   }
 
-    .site-header--dark .site-header__logo {
-      -webkit-transform: scale(.7);
-              transform: scale(.7);
-      background-color: transparent;
-}
+      .site-header--dark .site-header__logo {
+        -webkit-transform: scale(.7);
+                transform: scale(.7);
+        background-color: transparent;
+      }
   }
+
+.site-header__logo__text {
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+}
 
 .site-header__logo__graphic {
     text-indent: -999px;
@@ -1181,6 +1159,13 @@ margin-right: 1.4rem
 
 @media (min-width: 800px){
 
+.site-header__menu-content div:nth-child(2) {
+        border-right: 1px solid rgba(47,85,114, 0.3)
+    }
+  }
+
+@media (min-width: 800px){
+
 .site-header__menu-content {
       opacity: 1;
       z-index: 1;
@@ -1244,7 +1229,7 @@ margin-right: 1.4rem
 .primary-nav a {
         color: white;
         font-size: .8rem;
-        background-color: rgba(47,85,114, 0.7);
+        background-color: rgba(114,47,66, 0.7);
         font-weight: 300;
         text-decoration: none;
         display: block;
@@ -1334,7 +1319,7 @@ margin-right: 1.4rem
             transform: scaleX(1.2);
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    color:#2f5572;
+    color:#722f42;
     cursor: pointer;
   }
 

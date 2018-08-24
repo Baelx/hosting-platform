@@ -5,8 +5,8 @@
     padding: 4.5rem 0;
   }
 
-  &--blue {
-    background-color: $mainBlue;
+  &--red {
+    background-color: $mainRed;
     color: white;
   }
 
