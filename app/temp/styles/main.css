@@ -369,8 +369,13 @@ color: #d59541;
 .large-hero__video {
     display:block;
     width: 100%;
-    /*height: 600px;*/
   }
+
+/*height: 600px;*/
+
+.large-hero__video video {
+      width: 100%;
+    }
 
 .large-hero__text-content {
     padding-top: 88px;
