@@ -6,11 +6,19 @@
 
   &__video {
     display:block;
-    width: 100%;
-    /*height: 600px;*/
+    width: inherit;
+
+    @mixin atLarge {
+      width: 100%;
+    }
 
     video {
-      width: 100%;
+      width: inherit;
+
+      @mixin atLarge {
+
+        width: 100%;
+      }
     }
   }
 

@@ -368,14 +368,27 @@ color: #d59541;
 
 .large-hero__video {
     display:block;
-    width: 100%;
+    width: inherit;
   }
 
-/*height: 600px;*/
+@media (min-width: 1010px){
+
+.large-hero__video {
+      width: 100%
+  }
+  }
 
 .large-hero__video video {
-      width: 100%;
+      width: inherit;
     }
+
+@media (min-width: 1010px){
+
+.large-hero__video video {
+
+        width: 100%
+    }
+  }
 
 .large-hero__text-content {
     padding-top: 88px;
