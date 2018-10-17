@@ -445,6 +445,7 @@ color: #d59541;
   text-decoration: none;
   padding: 0.75rem 1.2rem;
   display: inline-block;
+  border-radius: 5px;
 }
 
 .btn--orange {
@@ -1065,6 +1066,7 @@ margin-bottom: 0;
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     transition: all .1s ease-out;
+    border-radius: 0px 0px 7px 7px;
   }
 
 @media (min-width: 800px){

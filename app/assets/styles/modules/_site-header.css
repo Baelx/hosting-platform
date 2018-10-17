@@ -31,6 +31,7 @@
     transform: translateX(-50%) scale(0.8);
     transform-origin: 50% 0;
     transition: all .1s ease-out;
+    border-radius: 0px 0px 7px 7px;
 
     @mixin atMedium {
       left: auto;

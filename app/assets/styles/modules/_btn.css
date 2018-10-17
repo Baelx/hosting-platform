@@ -4,6 +4,7 @@
   text-decoration: none;
   padding: 0.75rem 1.2rem;
   display: inline-block;
+  border-radius: 5px;
 
   &--orange {
     background-color: #d5954199;
