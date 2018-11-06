@@ -3,6 +3,7 @@ background-color: rgb(255, 255, 255, 0.8);
 padding: 0 18px 1px 18px;
 color: black;
 margin-bottom: 98px;
+border-radius: 20px;
 
 @mixin atLarge{
   padding: 0 1.8rem 1px 1.8rem;
