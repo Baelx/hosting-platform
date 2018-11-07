@@ -442,6 +442,9 @@ color: #d59541;
     background-color: #722f42;
     color: white;
   }
+.page-section--bg-blur {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 .page-section--testimonials {
     background-color: #e0e6ef;
     background: url("/assets/images/montrealst.jpeg") top center no-repeat;
@@ -714,25 +717,25 @@ color: #d59541;
 .feature-item__icon {
     display: block;
     margin: 0 auto;
-}
+  }
 @media (min-width: 530px){
 .feature-item__icon {
-  position: absolute;
-  left: 0
-}
+      position: absolute;
+      left: 0
+  }
   }
 .feature-item__title {
-font-size: 1.6rem;
-font-weight: 300;
-margin-top: 0.7em;
-margin-bottom: 0.8rem;
-text-align: center;
-}
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 0.7em;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
 @media (min-width: 530px){
 .feature-item__title {
-  font-size: 1.875rem;
-  text-align: left
-}
+      font-size: 1.875rem;
+      text-align: left
+  }
   }
 .testimonial {
 background-color: rgb(255, 255, 255, 0.8);
@@ -781,6 +784,10 @@ margin-bottom: 0;
   border-radius: 100%;
   width: 200px;
   height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
 }
 .price__title {
@@ -798,9 +805,14 @@ margin-bottom: 0;
   }
 .price * {
     text-align: center;
-    -webkit-transform: translateY(130%);
-            transform: translateY(130%);
+  /*transform: translateY(50%);*/
   }
+.specific-price {
+
+  width: 100%;
+  height: 100%;
+
+}
 .package {
 
 }

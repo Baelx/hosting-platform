@@ -18,6 +18,10 @@
     color: white;
   }
 
+  &--bg-blur {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
   &--testimonials {
     background-color: #e0e6ef;
     background: url("/assets/images/montrealst.jpeg") top center no-repeat;
