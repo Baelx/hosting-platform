@@ -1,21 +1,18 @@
 .price {
   display: inline-block;
+  position: relative;
   border: 2px solid $mainRed;
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-
 
   &__title {
     font-size: 1.6rem;
     font-weight: 300;
     margin-top: 0.7em;
     margin-bottom: 0.8rem;
-    text-align: center;
+    padding-top: 40px;
+
 
     @mixin atSmall {
       font-size: 1.875rem;
@@ -23,10 +20,9 @@
     }
   }
 
-  * {
-    text-align: center;
-  /*transform: translateY(50%);*/
-  }
+ & * {
+  text-align: center;
+}
 
 }
 
@@ -37,8 +33,11 @@
 
 }
 
-.package {
 
+
+
+.package {
+  padding-top: 25px;
 }
 
 .includes {

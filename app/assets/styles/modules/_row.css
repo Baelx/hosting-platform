@@ -40,9 +40,8 @@
       width: 33.33%;
 
       &--two-rows {
-        float: left;
-        width: 33.33%;
-        transform: translateY(50%);
+      position: relative;
+
       }
     }
 
