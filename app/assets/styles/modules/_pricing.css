@@ -1,10 +1,17 @@
 .price {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   position: relative;
   border: 2px solid $mainRed;
   border-radius: 100%;
   width: 200px;
   height: 200px;
+
+  @mixin atSmall {
+    display: inline-block;
+
+
+  }
 
   &__title {
     font-size: 1.6rem;
@@ -42,4 +49,12 @@
 
 .includes {
   display: inline-block;
+  list-style-type: none;
+  line-height: 35px;
+  transform: translateY(20px) !important;
+
+  img {
+    width: 15px;
+    margin-right: 5px;
+  }
 }
