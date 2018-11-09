@@ -1,8 +1,6 @@
 .page-section {
   padding: 1.2rem 0;
 
-
-
   @mixin atMedium {
     padding: 4.5rem 0;
   }
@@ -27,27 +25,23 @@
     background: url("/assets/images/montrealst.jpeg") top center no-repeat;
     background-size: cover;
 
-    @mixin atLarge {
-      &.lazyloaded {
-        position: relative;
+    &--pricing {
+      padding: 0.5rem 0;
 
-        background-attachment: fixed;
-
-        &::after {
-          content: '';
-          opacity: 0.5;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          z-index: -1;
-          position: absolute;
-
-        }
+      @mixin atMedium {
+        padding: 1.5rem 0;
       }
     }
 
+    @mixin atLarge {
+      &.lazyloaded {
+        position: relative;
+        background-attachment: fixed;
+      }
+    }
   }
+
+
 
   &--no-b-until-medium {
     padding-bottom: 0;

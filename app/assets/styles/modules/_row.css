@@ -41,7 +41,7 @@
 
       &--two-rows {
       position: relative;
-
+      transform: translateY(50%);
       }
     }
 

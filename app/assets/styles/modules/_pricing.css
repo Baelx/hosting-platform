@@ -20,9 +20,9 @@
     }
   }
 
- & * {
-  text-align: center;
-}
+  & * {
+    text-align: center;
+  }
 
 }
 
@@ -37,7 +37,7 @@
 
 
 .package {
-  padding-top: 25px;
+  padding: 10px 0;
 }
 
 .includes {

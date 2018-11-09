@@ -273,24 +273,18 @@ template {
   display: none;
 }
 body {
-/*font-family: "IBM+Plex+Sans", sans-serif;*/
-/*font-family: 'Fahkwang', sans-serif;*/
-
-
-    font-family: 'Kodchasan', sans-serif;
-
-
-color: #333;
+  font-family: 'Kodchasan', sans-serif;
+  color: #333;
 }
 img {
-max-width:100%;
-height: auto;
+  max-width:100%;
+  height: auto;
 }
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 a {
-color: #d59541;
+  color: #d59541;
 }
 .large-hero {
   /*border-bottom: 0.6em solid $mainRed;*/
@@ -449,26 +443,20 @@ color: #d59541;
     background-color: #e0e6ef;
     background: url("/assets/images/montrealst.jpeg") top center no-repeat;
     background-size: cover;
-
+  }
+.page-section--testimonials--pricing {
+      padding: 0.5rem 0;
+    }
+@media (min-width: 800px){
+.page-section--testimonials--pricing {
+        padding: 1.5rem 0
+    }
   }
 @media (min-width: 1010px){
       .page-section--testimonials.lazyloaded {
         position: relative;
-
         background-attachment: fixed;
       }
-
-        .page-section--testimonials.lazyloaded::after {
-          content: '';
-          opacity: 0.5;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          z-index: -1;
-          position: absolute;
-
-        }
   }
 .page-section--no-b-until-medium {
     padding-bottom: 0;
@@ -557,7 +545,8 @@ color: #d59541;
 
       .row__medium-4--two-rows {
       position: relative;
-
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%);
       }
 
     .row__medium-4--larger {
@@ -652,6 +641,12 @@ color: #d59541;
     font-size: 3.75rem
 
 }
+  }
+@media (min-width: 1010px){
+.section-title--pricing {
+      -webkit-transform: translateY(40px);
+              transform: translateY(40px)
+  }
   }
 .section-title strong {
     font-weight: 500;
@@ -799,8 +794,8 @@ margin-bottom: 0;
   }
   }
 .price * {
-  text-align: center;
-}
+    text-align: center;
+  }
 .specific-price {
 
   width: 100%;
@@ -808,7 +803,7 @@ margin-bottom: 0;
 
 }
 .package {
-  padding-top: 25px;
+  padding: 10px 0;
 }
 .includes {
   display: inline-block;
