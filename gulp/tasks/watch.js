@@ -14,10 +14,9 @@ function watchActions() {
   });
 }
 
-gulp.task("watch-en", function(){
+gulp.task("watch", function(){
 
   browserSync.init({
-    startPath: '/en',
     server: {
       baseDir: "app",
     }
@@ -26,18 +25,6 @@ gulp.task("watch-en", function(){
   watchActions();
 
 });
-
-gulp.task("watch-fr", function() {
-  browserSync.init({
-    startPath: '/fr',
-    server: {
-      baseDir: "app",
-    }
-  });
-
-  watchActions();
-
-})
 
 gulp.task("cssInject", ["styles"], function() {
   return gulp.src("./app/temp/styles/main.css")
