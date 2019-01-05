@@ -19,5 +19,14 @@
     animation:spin 1.5s cubic-bezier(.46,.03,.52,.96);
   }
 }
-
 @keyframes spin { 100% { transform:rotate(-360deg); } }
+
+.slide-in-item-bottom {
+  top: 125%;
+  transition: all 2.0s cubic-bezier(.46,.03,.52,.96);
+
+
+  &--is-visible {
+    top: 0%;
+  }
+}

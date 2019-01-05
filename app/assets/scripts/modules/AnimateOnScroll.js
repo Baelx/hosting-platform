@@ -7,12 +7,16 @@ class AnimateOnScroll {
     this.offsetPercent = offset;
     switch (effect) {
       case 'fadeInShrink':
-      this.hideInitiallyFade();
-      this.createWaypointsFade();
+        this.hideInitiallyFade();
+        this.createWaypointsFade();
+      break;
+      case 'slideInBottom':
+        this.hideInitiallySlideBottom();
+        this.createWaypointsSlideBottom();
       break;
       case 'slideInRight':
-      this.hideInitiallySlide();
-      this.createWaypointsSlide();
+        this.hideInitiallySlideRight();
+        this.createWaypointsSlideRight();
       break;
     }
 
@@ -22,7 +26,11 @@ class AnimateOnScroll {
     this.itemsToAnimate.addClass("fade-in-item");
   }
 
-  hideInitiallySlide() {
+  hideInitiallySlideBottom() {
+    this.itemsToAnimate.addClass("slide-in-item-bottom");
+  }
+
+  hideInitiallySlideRight() {
     this.itemsToAnimate.addClass("slide-in-item-right");
   }
 
@@ -40,7 +48,21 @@ class AnimateOnScroll {
     });
   }
 
-  createWaypointsSlide() {
+  createWaypointsSlideBottom() {
+    var that = this;
+    this.itemsToAnimate.each(function() {
+      var currentItem = this;
+      new Waypoint({
+        element: currentItem,
+        handler: function() {
+          $(currentItem).addClass("slide-in-item-bottom--is-visible");
+        },
+        offset: that.offsetPercent
+      });
+    });
+  }
+
+  createWaypointsSlideRight() {
     var that = this;
     this.itemsToAnimate.each(function() {
       var currentItem = this;
@@ -53,6 +75,8 @@ class AnimateOnScroll {
       });
     });
   }
+
+
 }
 
 
