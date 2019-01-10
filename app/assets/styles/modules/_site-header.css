@@ -44,10 +44,19 @@
     }
   }
   &__logo__text {
-  font-size: 3em;
-  color: white;
-  font-weight: 300;
-}
+    font-size: 3em;
+    line-height: 0.8;
+    color: white;
+    font-weight: 300;
+  }
+
+  &__logo__subtitle {
+    font-size: 1.4em;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+  }
 
   &__logo__graphic {
     text-indent: -999px;
