@@ -17,19 +17,16 @@
   transform: scale(1);
 }
 
-  @mixin atSmall {
-
-  }
+&__description {
+  line-height: 1.2;
+  font-size: 1.7rem;
+}
 
 
   &__body {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 300;
-
-    &--description {
-      line-height: 1.2;
-    }
 
     &--form {
       label {

@@ -772,14 +772,17 @@ margin: 0.25rem 0;
 .testimonial--last {
 margin-bottom: 0;
 }
-/*.specific-price {
-
-  width: 100%;
-  height: 100%;
-
-}*/
 .package {
   padding-bottom: 4.5rem;
+
+
+}
+.price-capture {
+  color: black;
+  text-decoration: none;
+}
+.price-capture:hover {
+  color: #d59541;
 }
 .price {
   display: block;
@@ -822,9 +825,9 @@ margin-bottom: 0;
           transform: translateY(20%) !important;
 }
 .includes li {
-   vertical-align: middle;
+    vertical-align: middle;
 
-}
+  }
 .includes img {
     width: 15px;
     margin-right: 5px;
@@ -1152,7 +1155,7 @@ margin-bottom: 0;
   }
 .slide-in-item-right {
   left: 125%;
-  transition: all 1.5s cubic-bezier(.46,.03,.52,.96);
+  transition: left 1.5s cubic-bezier(.46,.03,.52,.96);
 }
 .slide-in-item-right--is-visible {
     left: 0%;
@@ -1189,17 +1192,16 @@ margin-bottom: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-@media (min-width: 530px){
-  }
+.modal__description {
+  line-height: 1.2;
+  font-size: 1.7rem;
+}
 .modal__body {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 300;
 
   }
-.modal__body--description {
-      line-height: 1.2;
-    }
 .modal__body--form label {
         display: block;
         padding: 10px 0;

@@ -11,8 +11,7 @@
 
 .slide-in-item-right {
   left: 125%;
-  transition: all 1.5s cubic-bezier(.46,.03,.52,.96);
-
+  transition: left 1.5s cubic-bezier(.46,.03,.52,.96);
 
   &--is-visible {
     left: 0%;
