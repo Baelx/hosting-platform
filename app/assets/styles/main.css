@@ -1,7 +1,10 @@
-/*fonts*/
+/* fonts */
 @import url('https://fonts.googleapis.com/css?family=Kodchasan:200,300,400,500,700');
 
-/*modules*/
+/* icons */
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+/* modules */
 @import "normalize.css";
 @import "base/_vars";
 @import "base/_global";
