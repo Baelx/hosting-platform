@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kodchasan:200,300,400,500,700');
-/*fonts*/
-/*modules*/
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+/* fonts */
+/* icons */
+/* modules */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -696,38 +698,43 @@ a {
 
   }
   }
+#intro-section {
+    background-image: url('/assets/images/wpbg-wide.png');
+    background-position: right;
+    /* opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; */
+}
 .feature-item {
   position: relative;
   padding-bottom: 2.5rem;
+  text-align: center;
 
 }
-@media (min-width: 530px){
-.feature-item {
-    padding-left: 94px
+.feature-item__icon {
+    font-size: 70px;
+    /* background: -webkit-linear-gradient(white 0%, white 25%, black 50%, white 75%, white 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 
-}
-  }
-.feature-item__icon {
-    display: block;
-    margin: 0 auto;
-  }
-@media (min-width: 530px){
-.feature-item__icon {
+    /* @mixin atSmall {
       position: absolute;
-      left: 0
-  }
+      left: 0;
+    } */
   }
 .feature-item__title {
     font-size: 1.6rem;
     font-weight: 300;
     margin-top: 0.7em;
     margin-bottom: 0.8rem;
-    text-align: center;
   }
 @media (min-width: 530px){
 .feature-item__title {
-      font-size: 1.875rem;
-      text-align: left
+      font-size: 1.875rem
   }
   }
 .testimonial {
@@ -1187,15 +1194,15 @@ margin-bottom: 0;
 
 }
 .modal--is-visible {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 .modal__description {
-  line-height: 1.2;
-  font-size: 1.7rem;
-}
+    line-height: 1.2;
+    font-size: 1.7rem;
+  }
 .modal__body {
     text-align: center;
     font-size: 1.3rem;
